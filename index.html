@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hava Durumu</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon"
+        href="https://github.com/alibalbars/alibalbars.github.io/blob/master/icon_weather_new.png?raw=true">
+</head>
+
+
+<body>
+    <header id="header">
+        <img id = "headerImage" class="image" src="https://github.com/alibalbars/alibalbars.github.io/blob/master/icon_weather_new.png?raw=true"
+            alt="weather-icon" width="100px" height="100px" onload="imageLoad()">
+        <h1>Hava Durumu</h1>
+    </header>
+
+    <section>
+        <div id="divInput" style="margin:0px;">
+            <input id="inputPlace" type="text" placeholder="Şehir yada İlçe">
+            <button id="btnTamam">Tamam</button>
+        </div>
+
+        <div id="divResult1" style="padding: 10px;position: absolute;z-index: 2;visibility: hidden;">
+            <div style="border:solid red 1px;">
+                <p id="infoPlace" style="display: inline-block;transform: translateY(-50%);">Şehir, ülke</p>
+                <img id="imgFlag" src="https://www.countryflags.io/tr/shiny/64.png" width="30" height="30">
+            </div>
+            <hr style="margin: 0px 0px 10px 0px;">
+            <div style="border:solid blue 1px;font-size: 18px">
+                <p id="infoWeather1" style="display: inline-block;margin-bottom: 15px;">Bilgiler</p>
+                <img id="imgWeather" style=" background-color: rgb(200, 200, 200);border-radius: 50%; margin-top: 10px;" 
+                src="http://openweathermap.org/img/wn/10d@2x.png" width="70" height="70">
+            </div>
+        </div>
+        <br>
+        <div id="divResult2" style="padding: 5px;">
+            
+        </div>
+        <div class="loader"></div>
+    </section>
+    
+    <script src="/app.js"></script>
+</body>
+
+</html>
